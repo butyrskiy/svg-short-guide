@@ -1,0 +1,89 @@
+body {
+  padding: 50px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.svg {
+  width: 400px;
+  height: 300px;
+  border: 1px dotted #000;
+  margin-bottom: 50px;
+}
+
+.svg_2 {
+  width: 400px;
+  height: 400px;
+  border: 1px dotted #000;
+  margin-bottom: 50px;
+  overflow: visible;
+}
+
+.svg__text {
+  font-size: 20px;
+  fill: #000;
+}
+
+.rect {
+  stroke: #7a0bc0;
+  stroke-width: 10px;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  transition: all 1s ease-in-out;
+}
+
+.svg-rect:hover .rect,
+.svg-circle:hover .circle,
+.telegram:hover .telegram-path {
+  stroke-dashoffset: 0;
+}
+
+.circle {
+  transition: all 1s ease-in-out;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+}
+
+.telegram {
+  width: 400px;
+  height: 400px;
+}
+
+.telegram-path {
+  transition: all 1s ease-in-out;
+  fill: none;
+  stroke: #42a9eb;
+  stroke-width: 10px;
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 1560;
+}
+
+.img {
+  height: 400px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.telegram-2 {
+  width: 50px;
+  height: 50px;
+}
+
+.img-2 {
+  width: 900px;
+  clip-path: url(#telegram);
+}
